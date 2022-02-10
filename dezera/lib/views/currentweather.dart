@@ -1,3 +1,4 @@
+import 'package:dezera/views/additionalinformation.dart';
 import 'package:flutter/material.dart';
 
 Widget currentWeather(IconData icon, String temp, String location) {
@@ -34,7 +35,8 @@ Widget currentWeather(IconData icon, String temp, String location) {
         const Divider(),
         const SizedBox(
           height: 20.0,
-        )
+        ),
+        additionalInformation("24", "2", "1014", "24.6")
       ],
     ),
   );
