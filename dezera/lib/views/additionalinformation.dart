@@ -1,12 +1,11 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
 
 TextStyle title = const TextStyle(fontWeight: FontWeight.w600, fontSize: 18);
 TextStyle info = const TextStyle(fontWeight: FontWeight.w400, fontSize: 18);
 
 
 Widget additionalInformation(
-    String wind, String pressure, String humidity, String feelslike) {
+    String wind, String pressure, String humidity, String feels_like) {
   return Container(
     width: double.infinity,
     padding: const EdgeInsets.all(18.0),
@@ -51,7 +50,7 @@ Widget additionalInformation(
                 children: [
                   Text(humidity, style: info),
                   const SizedBox(height: 18),
-                  Text(feelslike, style: info),
+                  Text(feels_like, style: info),
                 ],
               ),
             ])
