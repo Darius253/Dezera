@@ -5,7 +5,7 @@ TextStyle info = const TextStyle(fontWeight: FontWeight.w400, fontSize: 18);
 
 
 Widget additionalInformation(
-    String wind, String pressure, String humidity, String feels_like) {
+    String wind, String pressure, String humidity, String feelslike) {
   return Container(
     width: double.infinity,
     padding: const EdgeInsets.all(18.0),
@@ -50,7 +50,7 @@ Widget additionalInformation(
                 children: [
                   Text(humidity, style: info),
                   const SizedBox(height: 18),
-                  Text(feels_like, style: info),
+                  Text(feelslike, style: info),
                 ],
               ),
             ])
